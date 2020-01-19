@@ -5,7 +5,7 @@ services:
     image: drone/drone:1.2.1
     ports:
       - 8000:80
-      - 9000:443
+      #- 9000:443
     networks:
       - drone
     volumes:
