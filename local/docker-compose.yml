@@ -9,7 +9,7 @@ services:
     networks:
       - drone
     volumes:
-      - ./drone-data:/var/lib/drone/
+      - /var/lib/drone/data:/data
       - /var/run/docker.sock:/var/run/docker.sock
     env_file:
       - ./drone.env
